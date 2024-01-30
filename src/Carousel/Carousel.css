@@ -1,0 +1,41 @@
+.carousel-container {
+  /* border: 10px solid black; */
+  height: 70vh;
+  display: flex;
+  align-content: center;
+  width: 70vw;
+  position: relative;
+
+  /* justify-content: center; */
+}
+
+.caro-main-box {
+  margin-top: 25px;
+
+  /* border: 10px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  /* border: 1px solid black; */
+  height: inherit;
+  width: 110%;
+}
+
+.left-slide-btn {
+  position: absolute;
+  height: 20vh;
+  width: 40px;
+  z-index: 1;
+  top: calc(50% - 10vh);
+}
+
+.right-slide-btn {
+  position: absolute;
+  height: 20vh;
+  width: 40px;
+  z-index: 1;
+  right: 0%;
+  top: calc(50% - 10vh);
+}

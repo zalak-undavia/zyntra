@@ -1,0 +1,21 @@
+.each-product {
+  border: 1px solid black;
+}
+
+.single-category-container {
+  border: 10px solid blue;
+  padding: 30px;
+}
+
+.rating-box {
+  border: 1px solid black;
+  position: absolute;
+  height: 40px;
+  top: 240px;
+  /* left: 10px; */
+  padding: 10px;
+}
+
+.single-category-card-img {
+  /* border: 10px solid red; */
+}

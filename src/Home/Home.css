@@ -1,0 +1,23 @@
+.main-container {
+  border: 1px solid black;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.content-bar {
+  /* border: 10px solid blue; */
+  padding: 20px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-shop-by-category {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 20px;
+}

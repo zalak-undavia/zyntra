@@ -1,0 +1,74 @@
+.header-bar {
+  border: 1px solid red;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+/* app name */
+
+.name-of-app {
+  /* border: 1px solid red; */
+  align-self: center;
+  font-size: 50px;
+  margin-left: 40px;
+  padding: 10px;
+
+  background-image: linear-gradient(to right, rgb(255, 72, 0), blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* input-sec */
+
+.input-sec {
+  /* border: 1px solid red; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-bar {
+  /* border: 1px solid red; */
+  width: 70%;
+  font-size: 25px;
+  position: relative;
+  padding: 10px;
+  padding-left: 50px;
+}
+.search-icon {
+  left: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* side -icon section */
+
+.profile-sec,
+.wishlist-section,
+.bag-section,
+.help-section {
+  /* border: 1px solid black; */
+  align-self: center;
+  text-align: center;
+  margin-right: 40px;
+  cursor: pointer;
+  line-height: 25px;
+  padding-top: 5px;
+}
+
+.profile-icon,
+.whishlist-icon,
+.bag-icon,
+.help-icon {
+  font-size: 22px;
+}
+
+.help-section {
+  margin-right: 50px;
+}

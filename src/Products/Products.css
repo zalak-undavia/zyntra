@@ -1,0 +1,65 @@
+.products-container {
+  /* border: 10px solid red; */
+  padding: 20px 30px;
+}
+
+.single-card {
+  cursor: pointer;
+}
+
+.single-card:hover {
+  box-shadow: 4px 4px 16px black;
+}
+.card-img {
+  height: 300px;
+}
+
+.card-body {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-name {
+  font-size: 25px;
+  /* que */
+  /* aa ahiya thoduk aam aadu avdu lage font size 30 rakhia to 25 rakhu chu to kai vandho nathi */
+}
+
+.shop-now {
+  font-size: 24px;
+}
+
+/* 
+
+inch
+
+pixels per inch
+
+phone nu ppi = 400ppi
+screen nu ppi = 200ppi
+
+
+width = 300px;
+que- letla inch ni line lagse ?
+
+1ppi 1inch
+400ppi  ?
+
+1px 1ich       
+300px ?
+1ppi px per inch
+px per inch   ppi
+
+400 px   1ch
+300px   ?     300/400 = 0.75inch
+
+200px / 1 inch
+
+200px 1nch
+300px ?       300/200  = 1.5inch
+
+
+*/

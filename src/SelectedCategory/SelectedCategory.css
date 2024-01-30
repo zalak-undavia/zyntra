@@ -1,0 +1,14 @@
+.selected-cat-main-page {
+  /* height: 100vh; */
+  display: flex;
+}
+
+.left-container {
+  border: 1px solid red;
+  flex: 1;
+}
+
+.right-container {
+  border: 1px solid green;
+  flex: 3;
+}
