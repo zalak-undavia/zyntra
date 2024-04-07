@@ -1,16 +1,16 @@
 .categoryPopUp {
-  border: 1px solid red;
-  background-color: green;
-  width: 100%;
-  height: 20vh;
-  position: absolute;
-  z-index: 1;
-  opacity: 0.9;
+    border: 1px solid red;
+    background-color: green;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9;
 }
 
 .brand-names {
-  border: 1px solid black;
-  display: inline-flex;
+    border: 1px solid black;
+    display: inline-flex;
 }
 
 /* que */
