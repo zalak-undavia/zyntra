@@ -8,7 +8,6 @@ import IndividualProduct from "./IndividualProduct/IndividualProduct.js";
 import Profile from "./Profile/Profile.js";
 import Wishlist from "./Wishlist/Wishlist.js";
 import Bag from "./Bag/Bag.js";
-import Help from "./Help/Help.js";
 import ReqAuth from "./ReqAuth.js";
 import { HeaderContext } from "./HeaderContext.js";
 import Footer from "./Footer/Footer.js";
@@ -38,7 +37,6 @@ function App() {
                                 </ReqAuth>
                             }
                         />
-                        <Route path="/help" element={<Help />} />
                         <Route
                             path="/selectedCategory/:category"
                             element={<SelectedCategory />}

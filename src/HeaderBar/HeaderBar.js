@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./HeaderBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
@@ -117,6 +117,7 @@ export default function HeaderBar() {
     const conformLogOut = () => {
         setIsLogOut(!isLogOut);
     };
+
     const userLoggedInTag = () => {
         const nameArr = auth.userName
             .split(" ")
@@ -125,12 +126,7 @@ export default function HeaderBar() {
                 return i < 2;
             })
             .join("");
-        //   <div
-        //     onClick={() => conformLogOut()}
-        //
-        //   >
-        //
-        //   </div>
+
         return (
             <div className="profile-sec">
                 <Dropdown>

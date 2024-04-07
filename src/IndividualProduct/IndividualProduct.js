@@ -49,8 +49,6 @@ export default function IndividualProduct() {
         dataToPush.qty = 1;
         getItemForBag.push(dataToPush);
         contextValue.calculateProduct();
-        // const dataToPush = {...data, qty: 1};
-        // getItemForBag.push(dataToPush);
 
         localStorage.setItem("bagArray", JSON.stringify(getItemForBag));
         setdata({ ...data });

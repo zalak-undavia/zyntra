@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Products.css";
 import { useNavigate } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import CardGroup from "react-bootstrap/CardGroup";
 
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";

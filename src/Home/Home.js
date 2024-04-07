@@ -1,11 +1,10 @@
 import "./Home.css";
-import Catagory from "../Category/Category.js";
 import Carousel from "../Carousel/Carousel.js";
 import Products from "../Products/Products.js";
 import ImageBlock1 from "../ImageBlock1/ImageBlock1.js";
 import ThreeBlockImg from "../ThreeBlockImg/ThreeBlockImg.js";
 import Parallax from "../Parallax/Parallax.js";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 export default function Home() {
     const categoryRef = useRef();

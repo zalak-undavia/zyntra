@@ -1,11 +1,8 @@
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import { useNavigate } from "react-router-dom";
 import "./Wishlist.css";
 import EmptyWishList from "./EmptyWishList";
-import Toast from "react-bootstrap/Toast";
 import { HeadcontextInHeader } from "../HeaderContext";
 
 export default function Wishlist() {

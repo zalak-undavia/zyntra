@@ -1,8 +1,7 @@
 import "./SelectedCategory.css";
 import SingleCategory from "../SingleCategory/SingleCategory";
-import { useSearchParams, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import FilterContainer from "../FilterContainer/FilterContainer";
 import FilterNew from "../FilterNew/FilterNew";
 
 export default function SelectedCategory() {
@@ -36,9 +35,6 @@ export default function SelectedCategory() {
             <div className="selected-cat-main-page">
                 <div className="left-container">
                     <FilterNew productNameCategory={productNameCategory} />
-                    {/* <FilterContainer
-                        productNameCategory={productNameCategory}
-                    /> */}
                 </div>
                 <div className="right-container">
                     <SingleCategory productNameCategory={productNameCategory} />

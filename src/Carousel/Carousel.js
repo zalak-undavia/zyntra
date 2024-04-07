@@ -34,13 +34,12 @@ export default function Carousel({ onClick }) {
     };
 
     useEffect(() => {
-        const zalak = setInterval(() => {
+        const interval = setInterval(() => {
             nextBtn();
         }, 4000);
 
         return () => {
-            console.log("current", imageIndex);
-            clearInterval(zalak);
+            clearInterval(interval);
         };
     }, []);
 

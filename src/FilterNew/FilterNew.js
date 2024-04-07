@@ -166,41 +166,41 @@ export default function FilterNew({ productNameCategory }) {
                 <div className="font-size-in-filter-section">
                     <div
                         onClick={() => selectStarForFilter(4)}
-                        className={`${
+                        className={
                             getStarFromUrl == 4
                                 ? "single-rating active-star-row"
                                 : "single-rating"
-                        }`}
+                        }
                     >
                         {renderStar(4)} & above
                     </div>
                     <div
                         onClick={() => selectStarForFilter(3)}
-                        className={`${
+                        className={
                             getStarFromUrl == 3
                                 ? "single-rating active-star-row"
                                 : "single-rating"
-                        }`}
+                        }
                     >
                         {renderStar(3)} & above
                     </div>
                     <div
                         onClick={() => selectStarForFilter(2)}
-                        className={`${
+                        className={
                             getStarFromUrl == 2
                                 ? "single-rating active-star-row"
                                 : "single-rating"
-                        }`}
+                        }
                     >
                         {renderStar(2)} & above
                     </div>
                     <div
                         onClick={() => selectStarForFilter(1)}
-                        className={`${
+                        className={
                             getStarFromUrl == 1
                                 ? "single-rating active-star-row"
                                 : "single-rating"
-                        }`}
+                        }
                     >
                         {renderStar(1)} & above
                     </div>

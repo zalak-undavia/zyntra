@@ -4,8 +4,6 @@ import "./CategoryPopUp.css";
 export default function CategoryPopUp({ selectCategory }) {
     const [data, setData] = useState([]);
 
-    const info = [{ "smartphones & laptops ": [] }];
-
     useEffect(() => {
         const asyncFun = async () => {
             try {

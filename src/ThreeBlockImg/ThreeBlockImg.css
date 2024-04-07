@@ -19,7 +19,6 @@
     /* border: 10px solid blue; */
     height: 50vh;
     align-items: center;
-    width: 40vw;
     display: flex;
     justify-content: space-around;
 }
@@ -59,7 +58,7 @@
 .right-block {
     /* border: 10px solid black; */
     height: 35vh;
-    width: 35vw;
+    width: 33vw;
     position: absolute;
     right: 0;
     top: 0;
