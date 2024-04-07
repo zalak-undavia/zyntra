@@ -4,35 +4,35 @@ import { useState } from "react";
 import CategoryPopUp from "../CategoryPopUp/CategoryPopUp";
 
 export default function Catagory() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectCategory, setSelectCategory] = useState("");
+    const [isOpen, setIsOpen] = useState(false);
+    const [selectCategory, setSelectCategory] = useState("");
 
-  const categoryBar = [
-    "smartphones & laptops ",
-    "men",
-    "women",
-    "skincare",
-    "fragrances",
-    "Sunglasses",
-    "groceries",
-    "Home-decoration",
-    "Furniture",
-    "Automotive & Motorcycle",
-    "Lighting",
-  ];
+    const categoryBar = [
+        "smartphones & laptops ",
+        "men",
+        "women",
+        "skincare",
+        "fragrances",
+        "Sunglasses",
+        "groceries",
+        "Home-decoration",
+        "Furniture",
+        "Automotive & Motorcycle",
+        "Lighting",
+    ];
 
-  const mouseEnter = (e) => {
-    setSelectCategory(e.target.innerText);
-    setIsOpen(true);
-  };
+    const mouseEnter = (e) => {
+        setSelectCategory(e.target.innerText);
+        setIsOpen(true);
+    };
 
-  const mouseLeave = () => {
-    setSelectCategory("");
-    setIsOpen(false);
-  };
-  return (
-    <div>
-      <div className="catagory-list">
+    const mouseLeave = () => {
+        setSelectCategory("");
+        setIsOpen(false);
+    };
+    return (
+        <div>
+            {/* <div className="catagory-list">
         {categoryBar.map((v, i) => {
           return (
             <div
@@ -45,8 +45,8 @@ export default function Catagory() {
             </div>
           );
         })}
-      </div>
-      <div>{isOpen && <CategoryPopUp selectCategory={selectCategory} />}</div>
-    </div>
-  );
+      </div> */}
+            {/* <div>{isOpen && <CategoryPopUp selectCategory={selectCategory} />}</div> */}
+        </div>
+    );
 }

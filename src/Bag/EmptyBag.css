@@ -1,0 +1,50 @@
+.bag-body-section {
+    display: flex;
+    height: 80vh;
+    background-color: #eff3f6;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-bag-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.empty-bag-img {
+    height: 250px;
+    width: 300px;
+    border-radius: 0.375rem;
+}
+
+.bag-text {
+    text-align: center;
+    width: 400px;
+    line-height: 33px;
+    font-size: 23px;
+    padding: 10px 10px;
+}
+
+.bag-text:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.wishlist-in-bag {
+    padding: 20px 40px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: #faedeb;
+    word-spacing: 3px;
+    border-radius: 0.375rem;
+}
+
+.wishlist-in-bag:hover {
+    background-color: white;
+    color: black;
+}

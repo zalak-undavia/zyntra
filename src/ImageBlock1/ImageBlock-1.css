@@ -1,0 +1,36 @@
+.img-block-1-container {
+    /* border: 10px solid black; */
+    height: 90vh;
+    background-color: #eff3f6 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.clr-box {
+    /* border: 10px solid blue; */
+    height: 60vh;
+    width: 55vw;
+    background-color: white;
+
+    /* background-color: #faedeb; */
+}
+.img-block-1-img {
+    /* border: 10px solid green; */
+    height: 60vh;
+    position: absolute;
+    width: 20vw;
+    top: 10%;
+
+    left: 20%;
+}
+
+.img-block-1-text {
+    /* border: 10px solid red; */
+    position: absolute;
+    width: 25vw;
+    height: 20vh;
+    left: 50%;
+    font-size: 30px;
+}

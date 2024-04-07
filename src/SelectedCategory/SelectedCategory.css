@@ -1,14 +1,14 @@
 .selected-cat-main-page {
-  /* height: 100vh; */
-  display: flex;
+    display: flex;
 }
 
 .left-container {
-  border: 1px solid red;
-  flex: 1;
+    /* border: 10px solid red; */
+    flex: 1;
 }
 
 .right-container {
-  border: 1px solid green;
-  flex: 3;
+    background-color: #eef3f6;
+    padding: 10px 40px;
+    flex: 3;
 }

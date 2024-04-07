@@ -1,9 +1,8 @@
 .App {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 .content {
-  height: 100vh;
-  margin-top: 80px;
-  /* padding-top: 80px; */
+    height: 100vh;
+    padding-top: 60px;
 }

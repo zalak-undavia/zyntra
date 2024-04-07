@@ -1,0 +1,80 @@
+.move-to-bag-btn {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: azure;
+    cursor: pointer;
+}
+
+.card-length {
+    border: 1px solid red;
+}
+.curser {
+    cursor: pointer;
+}
+
+.wish-close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    width: 40px;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.wish-close-btn:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: red;
+}
+
+.nums-of-products-in-wishlist {
+    padding: 10px 30px;
+    font-size: 25px;
+    background-color: #eff3f6;
+}
+
+.wish-img-bag {
+    height: 60px;
+}
+
+.wish-header {
+    /* border: 1px solid black; */
+    font-size: 22px;
+    display: flex;
+    padding: 30px 10px 0px 10px;
+}
+.wish-heder-text {
+    align-self: center;
+}
+
+.single-category-container-wish {
+    border: 10px solid #eff3f6;
+    background-color: #eff3f6;
+    display: flex;
+    justify-content: center;
+}
+
+.inside-wish-container {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wish-category-name {
+    /* border: 100px solid red; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 290px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.wishlist-card-style-z {
+    /* width: 400px; */
+    margin-left: 40px;
+    margin-bottom: 50px;
+    width: 320px;
+}

@@ -1,0 +1,36 @@
+.main-parallax-container {
+}
+
+.img-container-parallex {
+    /* border: 100px solid yellow; */
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    padding: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    background: url("https://www.usmagazine.com/wp-content/uploads/2023/07/Lighweight-Summer-Dress-Stock-Photo.jpg?");
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    background-size: cover;
+}
+
+.caro-main-box,
+.img-block-1-container,
+.title-shop-by-category,
+.products-container,
+.three-block-img-container {
+    /* border: 10px solid green; */
+    z-index: 10;
+    background: white;
+}
+
+.parallex-window {
+    /* border: 100px solid red; */
+    height: 70vh;
+    opacity: 1;
+}
+
+/* https://www.usmagazine.com/wp-content/uploads/2023/07/Lighweight-Summer-Dress-Stock-Photo.jpg?crop=0px%2C135px%2C2000px%2C1131px&resize=1000%2C563&quality=86&strip=all */
