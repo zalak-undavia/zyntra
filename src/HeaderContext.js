@@ -9,6 +9,7 @@ export const HeaderContext = ({ children }) => {
     const calculateProduct = () => {
         setCount((r) => r + 1);
     };
+
     return (
         <Context.Provider value={{ count, calculateProduct }}>
             {children}

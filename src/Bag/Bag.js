@@ -1,10 +1,14 @@
+import { useState } from "react";
+
 import "./Bag.css";
+
 import EmptyBag from "./EmptyBag";
 import BagProducts from "./BagProducts";
+
 import Modal from "react-bootstrap/Modal";
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Toast from "react-bootstrap/Toast";
+
 import { HeadcontextInHeader } from "../HeaderContext";
 
 export default function Bag() {
@@ -52,7 +56,6 @@ export default function Bag() {
         const getItemForBag = JSON.parse(
             localStorage.getItem("bagArray") || "[]"
         );
-        console.log("getitemforbag", getItemForBag);
         getItemForBag.splice(index, 1);
         localStorage.setItem("bagArray", JSON.stringify(getItemForBag));
         contextValue.calculateProduct();
@@ -255,6 +258,3 @@ export default function Bag() {
         </div>
     );
 }
-
-// /user/bag
-// /user/save-bag data: []

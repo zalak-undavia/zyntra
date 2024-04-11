@@ -11,10 +11,7 @@ export default function BagProducts({ v, i, deleteFromBag, onQtyChange }) {
         nav(`/product?individualProduct=${v.id}`);
     };
 
-    //   e event ni jarur bag ne nathi ... so we dont have to write
-    // this function in bag componenet
     const selectKaryu = (e) => {
-        console.log("value in select karyu", e.target.value);
         onQtyChange(Number.parseInt(e.target.value));
     };
 

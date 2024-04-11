@@ -10,6 +10,7 @@ export default function SingleCategory({ productNameCategory }) {
     const discount = (price, discountPercentage) => {
         return Math.round(price - (price * discountPercentage) / 100);
     };
+
     const prices = productNameCategory.map((v) =>
         discount(v.price, v.discountPercentage)
     );
@@ -36,7 +37,6 @@ export default function SingleCategory({ productNameCategory }) {
 
         const splitedTotalBrands = totalBrands.split(",");
 
-        console.log("splitedbrands", splitedTotalBrands);
         // rating with discount arr-
         const filteredArray = productNameCategory
             .filter((v, i) => {
@@ -118,6 +118,3 @@ export default function SingleCategory({ productNameCategory }) {
 
     return <div>{renderProducts()}</div>;
 }
-
-// usestate ma [data , setdata] = usestaste() aani andar jo [] ni badle
-// " lahkyu" to filter ke map fervati vakhte aavu aavshe ke data.filter is not a function

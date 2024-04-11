@@ -1,13 +1,19 @@
 import { useState } from "react";
-import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
-import "./Wishlist.css";
-import EmptyWishList from "./EmptyWishList";
+
 import { HeadcontextInHeader } from "../HeaderContext";
+
+import Card from "react-bootstrap/Card";
+
+import "./Wishlist.css";
+
+import EmptyWishList from "./EmptyWishList";
 
 export default function Wishlist() {
     const [_, setPageRefreshState] = useState({});
+
     const wishlist = JSON.parse(localStorage.getItem("wishProduct") || "[]");
+
     const contextValue = HeadcontextInHeader();
     const discount = (price, discountPercentage) => {
         return Math.round(price - (price * discountPercentage) / 100);
@@ -22,6 +28,7 @@ export default function Wishlist() {
         const wishlist = JSON.parse(
             localStorage.getItem("wishProduct") || "[]"
         );
+
         wishlist.splice(index, 1);
         localStorage.setItem("wishProduct", JSON.stringify(wishlist));
         setPageRefreshState({});

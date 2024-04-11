@@ -33,6 +33,3 @@ export default function ThreeBlockImg() {
         </div>
     );
 }
-
-// carousel img
-// https://www.wfla.com/wp-content/uploads/sites/71/2023/04/GettyImages-675594794.jpg?strip=1
