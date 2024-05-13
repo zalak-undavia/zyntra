@@ -53,7 +53,11 @@ function App() {
                         <Footer />
                         <div className="name-footer-zalak">
                             Created with ❤️ by
-                            <a className="profile-link-zalak" target="_blank">
+                            <a
+                                href="https://github.com/zalak-undavia/zyntra"
+                                className="profile-link-zalak"
+                                target="_blank"
+                            >
                                 Zalak Undavia
                             </a>
                         </div>
