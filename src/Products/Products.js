@@ -39,7 +39,7 @@ export default function Products() {
                 const request = await fetch(
                     "https://dummyjson.com/products/categories"
                 );
-                const response = await request.json();
+                const response = await request.json().map((t) => t.name);
                 setProductsCategories(response);
             } catch (e) {
                 console.log("error", e);
