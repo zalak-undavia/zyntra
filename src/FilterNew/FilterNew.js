@@ -79,15 +79,11 @@ export default function FilterNew({ productNameCategory }) {
     };
 
     const renderBrands = () => {
-        const uniqueBrands = productNameCategory.filter((v, i) => {
-            return (
-                i ==
-                productNameCategory.findIndex((value) => {
-                    return value.brand == v.brand;
-                })
-            );
-        });
-
+        const uniqueBrands = Array.from(
+            new Set(
+                productNameCategory.filter((t) => t.brand).map((t) => t.brand)
+            )
+        );
         const totalBrands = searchParams.get("brands") || "";
 
         const onchangeForBrands = (brandName) => {
@@ -114,27 +110,34 @@ export default function FilterNew({ productNameCategory }) {
             setSearchParams(params.toString());
         };
 
+        if (uniqueBrands.length === 0) {
+            return;
+        }
         return (
-            <div className="brand-filter-section">
-                <h3>BRAND</h3>
-                <div>
-                    {uniqueBrands.map((v, i) => {
-                        return (
-                            <div className="single-brand-in-filter-section font-size-in-filter-section ">
-                                <input
-                                    checked={exists(totalBrands, v.brand)}
-                                    onChange={() =>
-                                        onchangeForBrands(v.brand, i)
-                                    }
-                                    className="checkbox-input-filter"
-                                    type="checkbox"
-                                ></input>
-                                <div className="brand">{v.brand}</div>
-                            </div>
-                        );
-                    })}
+            <>
+                <div className="brand-filter-section">
+                    <h3>BRAND</h3>
+
+                    <div>
+                        {uniqueBrands.map((v, i) => {
+                            return (
+                                <div
+                                    key={i}
+                                    className="single-brand-in-filter-section font-size-in-filter-section "
+                                >
+                                    <input
+                                        checked={exists(totalBrands, v)}
+                                        onChange={() => onchangeForBrands(v, i)}
+                                        className="checkbox-input-filter"
+                                        type="checkbox"
+                                    ></input>
+                                    <div className="brand">{v}</div>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
+            </>
         );
     };
 

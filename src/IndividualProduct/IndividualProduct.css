@@ -22,10 +22,7 @@
 }
 
 .detail-container {
-    /* border: 10px solid red; */
     display: flex;
-
-    /* background-color: #eff3f6; */
 }
 
 .right-conatiner-individual-product {
@@ -40,9 +37,6 @@
 }
 
 .left-container-individual-product {
-    /* border: 10px solid black; */
-    /* border-top-right-radius: 0.375rem;
-    border-bottom-left-radius: 0.357rem; */
     flex: 1;
     background-color: #eff3f6;
 }
@@ -61,12 +55,6 @@
 .bag-icon {
     margin-right: 10px;
 }
-
-/* .btn {
-  width: 15vw;
-  height: 8vh;
-  font-size: 25px;
-} */
 
 .btn-left {
     margin-right: 20px;

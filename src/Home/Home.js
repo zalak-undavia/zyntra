@@ -17,7 +17,6 @@ export default function Home() {
         <div>
             <div className="main-container">
                 <div className="content-bar">
-                    {/* <Catagory /> */}
                     <Carousel onClick={onCarouselClick} />
                     <ImageBlock1 />
                     <div className="title-shop-by-category">

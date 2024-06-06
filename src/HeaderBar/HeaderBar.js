@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./HeaderBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
@@ -40,7 +40,7 @@ export default function HeaderBar() {
     };
 
     const onSubmitSearch = async (e) => {
-        e.preventDefault();
+        e?.preventDefault();
 
         if (inputValue == "" || data.length == 0) {
             setOpenDropDown(false);
@@ -107,6 +107,8 @@ export default function HeaderBar() {
             setOpenDropDown(false);
         }
         setInputValue(e.target.value);
+
+        onSubmitSearch();
     };
 
     const userLogOutFun = () => {
@@ -171,7 +173,6 @@ export default function HeaderBar() {
                                 placeholder="Search on zyntra"
                                 value={inputValue}
                                 onChange={(e) => searchInputOnchangeFun(e)}
-                                // aria-describedby="basic-addon1"
                             />
                         </InputGroup>
                     </form>
@@ -236,10 +237,3 @@ export default function HeaderBar() {
         </div>
     );
 }
-
-// que
-// 1 . olu serch icon ma input bar ma postion relative
-// nd search icon ma absoltue aapu chu to km nathi chaltu?
-
-// 2.placeholder ma aavi rite space mukia to chale?
-// ans= padding-left aapvathi

@@ -4,13 +4,10 @@ import { useNavigate } from "react-router-dom";
 import { useSearchParams, useParams } from "react-router-dom";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import { useAuth } from "../auth.js";
 
 import Button from "react-bootstrap/Button";
 import { HeadcontextInHeader } from "../HeaderContext";
-import SelectedCategory from "../SelectedCategory/SelectedCategory";
 
 export default function IndividualProduct() {
     const [data, setdata] = useState(null);
@@ -94,10 +91,13 @@ export default function IndividualProduct() {
                 <div className="discription-single-product-individual padding-bottom-individual-product">
                     {data.description}.
                 </div>
-                <div className="brand-single-product-individual padding-bottom-individual-product">
-                    <span className="bold-fonts-individual">Brand </span>:
-                    <span> {data.brand}</span>
-                </div>
+                {data.brand !== undefined && (
+                    <div className="brand-single-product-individual padding-bottom-individual-product">
+                        <span className="bold-fonts-individual">Brand </span>:
+                        <span> {data.brand}</span>
+                    </div>
+                )}
+
                 <div className="rating-box-single-product-individual padding-bottom-individual-product">
                     <span>{data.rating}</span>
                     <i className="bi bi-star-fill star-individual"></i>
@@ -164,9 +164,6 @@ export default function IndividualProduct() {
     const hedearCategory =
         data.category.slice(0, 1).toUpperCase() + data.category.slice(1);
 
-    //   const url = window.location.href;
-    //   console.log("url", url);
-    // ama search param uper thi kai lavi sakay?
     const getPath = () => {
         return (
             <Breadcrumb className="z-breadcrumb">
@@ -196,23 +193,3 @@ export default function IndividualProduct() {
         </div>
     );
 }
-
-// que- km saerch param mathi sidho obj laine map no kari nalyu?
-// useeffect krvani su jrrur
-// line 17 sachi che?
-// quw - ama aapde last img dekhadvi no hoy to oli thumbnail vali
-// que - der vakhte rating same reh ani mate su karvanu
-// aam screen nani karia tyare card aam right-container ma uper aavta
-// overlap thai jata hoy aavu lage
-// why i can not increase start height?
-// aapde response ne array ma aavi rite set kri sakia?
-
-// local storage sikhvanu
-// product ma response.product karyu ama judu karyu
-// make a note
-
-// use effect hoy hoy atle data aave j aavu jruri nathi
-
-// coding-bat==
-// 1. (n-23838) ... to minus sign remove larva mate
-// Math.abs((n-23838))

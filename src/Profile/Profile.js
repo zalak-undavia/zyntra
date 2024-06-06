@@ -88,12 +88,3 @@ export default function Profile() {
         </div>
     );
 }
-
-//
-
-//
-//
-
-// src="https://cdn.dribbble.com/users/3470483/screenshots/15488062/media/5c5ca53632683539492e731876c7372f.jpg?resize=1000x750&vertical=center"
-
-// src="https://cdn.dribbble.com/users/3470483/screenshots/15488062/media/5c5ca53632683539492e731876c7372f.jpg?resize=1000x750&vertical=center"

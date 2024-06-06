@@ -198,12 +198,13 @@ export default function Bag() {
                         </span>
                     </div>
                     <div className="mrp-section">
-                        Total MRP <span className="mrp">Rs {MRP}</span>
+                        Total MRP{" "}
+                        <span className="mrp">Rs {MRP.toFixed(2)}</span>
                     </div>
                     <div className="discount-on-mrp">
                         Discount on MRP
                         <span style={{ color: "green" }}>
-                            - Rs {discountOnMrp}
+                            - Rs {discountOnMrp.toFixed(2)}
                         </span>
                     </div>
                     <div className="platform-fee-section">

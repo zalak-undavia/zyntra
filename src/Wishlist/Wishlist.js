@@ -147,7 +147,6 @@ export default function Wishlist() {
                                         MOVE TO BAG
                                     </div>
                                 </Card>
-                                // </Col>
                             ))}
                         </div>
                     </div>

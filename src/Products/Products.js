@@ -108,10 +108,6 @@ export default function Products() {
     }, []);
 
     const selectCategory = (vastu) => {
-        // console.log("aa vastu no type of", typeof vastu);
-        // aa string che
-
-        // nav(`/selectedCategory?productCategory=${vastu}`);
         nav(`/selectedCategory/${vastu}`);
     };
 
@@ -145,41 +141,4 @@ export default function Products() {
             </div>
         </div>
     );
-}
-
-// <div>box</div>
-// <div>{productsCategories}</div>
-
-// <div
-// onClick={() => selectCategory(v)}
-// key={i}
-// className="image-category-block"
-// >
-// <div className="image-category-picture">
-//   <img className="picture" src={CatagoryImages[i]} />
-// </div>
-// <div className="category-name">{v.toUpperCase()}</div>
-// <div className="shop-now">SHOP NOW</div>
-// </div>
-
-{
-    /* <Row xs={1} md={3} lg={5} xl={8} className="g-4">
-{productsCategories.map((v, i) => {
-  return (
-    <Col key={i}>
-      <Card className="aa">
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a longer card with supporting text below as a
-            natural lead-in to additional content. This content is a
-            little bit longer.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  );
-})}
-</Row> */
 }

@@ -6,10 +6,7 @@
     width: 100%;
     top: 0;
     padding: 10px 0px;
-    /* color: transparent; */
-    /* opacity: 0.7; */
     z-index: 100;
-    /* background-color: ; */
     background-color: white;
     box-shadow: 4px 4px 16px #ecf4fa;
 }
@@ -19,13 +16,9 @@
 .name-of-app {
     /* border: 1px solid red; */
     align-self: center;
-    /* font-size: 50px; */
     cursor: pointer;
-
-    /* background-image: linear-gradient(to right, #b0525f, #953150); */
     -webkit-background-clip: text;
     background-clip: text;
-    /* color: transparent; */
     color: black;
 }
 /* input-sec */
@@ -115,9 +108,6 @@
     display: flex;
 }
 
-.header-profile-auth {
-}
-
 .header-left,
 .header-right {
     flex: 1;
@@ -144,8 +134,6 @@
 .dropdown-toggle::after {
     display: none;
 }
-
-/* aanu jo ne aa uper nu */
 
 .position-logout-zz {
     background-color: black;

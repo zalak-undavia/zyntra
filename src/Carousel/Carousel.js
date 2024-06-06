@@ -55,7 +55,7 @@ export default function Carousel({ onClick }) {
                     onClick={() => pereviousBtn()}
                     className="left-slide-btn"
                 >
-                    <i class="bi bi-chevron-compact-left"></i>
+                    <i className="bi bi-chevron-compact-left"></i>
                 </button>
                 <div className="text-on-carousel">
                     <span className="lestest-trend-text">
@@ -81,12 +81,9 @@ export default function Carousel({ onClick }) {
                     }}
                 />
                 <button onClick={() => nextBtn()} className="right-slide-btn">
-                    <i class="bi bi-chevron-compact-right"></i>
+                    <i className="bi bi-chevron-compact-right"></i>
                 </button>
             </div>
         </div>
     );
 }
-
-// "https://images.squarespace-cdn.com/content/v1/5b48bc32d274cb43888c8da0/1613486382035-6879WCV2WZBRFRZL13ER/Senior+Photographer+Near+Me",
-//
